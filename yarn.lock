@@ -1956,6 +1956,14 @@
     url-join "4.0.1"
     uuid "^3.1.0"
 
+"@strapi/provider-email-nodemailer@^4.1.12":
+  version "4.1.12"
+  resolved "https://registry.yarnpkg.com/@strapi/provider-email-nodemailer/-/provider-email-nodemailer-4.1.12.tgz#a26eb2dd68ebfbd4bf7c238eb53e54f6068c17a9"
+  integrity sha512-CvhClJs2VUfx1CtaRWShvwsvj1nYnU5pA4KF2dCDQ+gf9zed2h6o1YYkSocV8nM3P/rD5IWw2puPoBbjijSsYg==
+  dependencies:
+    lodash "4.17.21"
+    nodemailer "6.7.3"
+
 "@strapi/provider-email-sendmail@4.1.5":
   version "4.1.5"
   resolved "https://registry.yarnpkg.com/@strapi/provider-email-sendmail/-/provider-email-sendmail-4.1.5.tgz#756d4044f849a2ccffa0c7fb3d642fff58726b5f"
@@ -7869,6 +7877,11 @@ nodemailer-shared@1.1.0:
   integrity sha1-z1mU4v0mjQD1zw+nZ6CBae2wfsA=
   dependencies:
     nodemailer-fetch "1.6.0"
+
+nodemailer@6.7.3:
+  version "6.7.3"
+  resolved "https://registry.yarnpkg.com/nodemailer/-/nodemailer-6.7.3.tgz#b73f9a81b9c8fa8acb4ea14b608f5e725ea8e018"
+  integrity sha512-KUdDsspqx89sD4UUyUKzdlUOper3hRkDVkrKh/89G+d9WKsU5ox51NWS4tB1XR5dPUdR4SP0E3molyEfOvSa3g==
 
 "nopt@2 || 3":
   version "3.0.6"
