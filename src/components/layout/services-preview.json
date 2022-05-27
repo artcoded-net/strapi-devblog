@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_layout_services_previews",
+  "info": {
+    "displayName": "servicesPreview",
+    "icon": "barcode"
+  },
+  "options": {},
+  "attributes": {
+    "services": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::service.service"
+    }
+  }
+}

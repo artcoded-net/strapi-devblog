@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_layout_links",
+  "info": {
+    "displayName": "link",
+    "icon": "arrow-right"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "url": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "kind": "singleType",
+  "collectionName": "headers",
+  "info": {
+    "singularName": "header",
+    "pluralName": "headers",
+    "displayName": "Header"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "showLogo": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "menu": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::menu.menu"
+    },
+    "socialLinks": {
+      "type": "component",
+      "repeatable": true,
+      "component": "config.social-link"
+    },
+    "showProfileLink": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    }
+  }
+}
