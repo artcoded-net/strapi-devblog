@@ -29,8 +29,8 @@ services:
         generateValue: true
       - key: PUBLIC_SERVER_URL
         sync: false
-      - key: PUBLIC_ADMIN_URL
-        sync: false
+      # - key: PUBLIC_ADMIN_URL
+      #   sync: false
       - key: GITHUB_TOKEN
         sync: false
       - key: SMTP_HOST
