@@ -1,0 +1,47 @@
+services:
+  - type: web
+    name: dev-blog
+    env: node
+    plan: starter
+    buildCommand: yarn install && NODE_ENV=production yarn build
+    startCommand: yarn start
+    healthCheckPath: /_health
+    envVars:
+      - key: NODE_VERSION
+        value: ~16.13.0
+      - key: NODE_ENV
+        value: production
+      - key: CLOUDINARY_NAME
+        sync: false
+      - key: CLOUDINARY_KEY
+        sync: false
+      - key: CLOUDINARY_SECRET
+        sync: false
+      - key: DATABASE_URL
+        fromDatabase:
+          name: strapi-db
+          property: connectionString
+      - key: JWT_SECRET
+        generateValue: true
+      - key: ADMIN_JWT_SECRET
+        generateValue: true
+      - key: APP_KEYS
+        generateValue: true
+      - key: PUBLIC_SERVER_URL
+        sync: false
+      - key: PUBLIC_ADMIN_URL
+        sync: false
+      - key: GITHUB_TOKEN
+        sync: false
+      - key: SMTP_HOST
+        sync: false
+      - key: SMTP_PORT
+        sync: false
+      - key: SMTP_USERNAME
+        sync: false
+      - key: SMTP_PASSWORD
+        sync: false
+
+databases:
+  - name: strapi-db
+    plan: starter
