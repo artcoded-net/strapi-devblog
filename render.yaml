@@ -2,11 +2,13 @@ services:
   - type: web
     name: dev-blog
     env: node
-    plan: starter
-    buildCommand: yarn install && NODE_ENV=production yarn build
+    plan: free
+    buildCommand: yarn && NODE_ENV=production yarn build
     startCommand: yarn start
     healthCheckPath: /_health
     envVars:
+      - key: PUBLIC_SERVER_URL
+        sync: false
       - key: NODE_VERSION
         value: ~16.13.0
       - key: NODE_ENV
@@ -16,6 +18,16 @@ services:
       - key: CLOUDINARY_KEY
         sync: false
       - key: CLOUDINARY_SECRET
+        sync: false
+      - key: SMTP_HOST
+        sync: false
+      - key: SMTP_PORT
+        sync: false
+      - key: SMTP_USERNAME
+        sync: false
+      - key: SMTP_PASSWORD
+        sync: false
+      - key: GITHUB_TOKEN
         sync: false
       - key: DATABASE_URL
         fromDatabase:
@@ -27,21 +39,9 @@ services:
         generateValue: true
       - key: APP_KEYS
         generateValue: true
-      - key: PUBLIC_SERVER_URL
-        sync: false
-      # - key: PUBLIC_ADMIN_URL
-      #   sync: false
-      - key: GITHUB_TOKEN
-        sync: false
-      - key: SMTP_HOST
-        sync: false
-      - key: SMTP_PORT
-        sync: false
-      - key: SMTP_USERNAME
-        sync: false
-      - key: SMTP_PASSWORD
-        sync: false
+      - key: API_TOKEN_SALT
+        generateValue: true
 
 databases:
   - name: strapi-db
-    plan: starter
+    plan: free
