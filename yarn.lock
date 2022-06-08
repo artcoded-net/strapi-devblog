@@ -42,10 +42,10 @@
   dependencies:
     xss "^1.0.8"
 
-"@artcoded/strapi-plugin-github-projects@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@artcoded/strapi-plugin-github-projects/-/strapi-plugin-github-projects-1.0.1.tgz#26e964a59091924a08e1c32cd8c3b6143b68d8f6"
-  integrity sha512-355Cj4eaLRkVeTKUFNlaVsxpzBI3S3/wCECaxdtsZKmUDNvRqrOy5Z10vwH7OgfR5yAEf7YknuWVrUB3hWh5PQ==
+"@artcoded/strapi-plugin-github-projects@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@artcoded/strapi-plugin-github-projects/-/strapi-plugin-github-projects-1.0.4.tgz#1465312bf53bdb5f8567e051df1b1b1b7b4219b5"
+  integrity sha512-jJuiIuJkyiCGlOQ5kgi/uTkd1UogM4JL63JFSF//9OrZMA5MxL6dPFAXEQY8Y8/URbCJiM+i7blZS4pgUnZYIw==
   dependencies:
     "@octokit/request" "^5.6.3"
     markdown-it "^13.0.1"
