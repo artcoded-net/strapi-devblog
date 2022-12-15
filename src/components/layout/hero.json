@@ -25,6 +25,9 @@
       "type": "component",
       "repeatable": true,
       "component": "layout.link"
+    },
+    "subtitle": {
+      "type": "string"
     }
   }
 }

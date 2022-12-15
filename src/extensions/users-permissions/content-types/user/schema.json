@@ -67,7 +67,7 @@
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::post.post",
-      "inversedBy": "likedBy"
+      "mappedBy": "likedBy"
     }
   }
 }
