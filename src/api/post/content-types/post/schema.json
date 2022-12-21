@@ -39,7 +39,7 @@
     "authors": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "admin::user"
+      "target": "api::author.author"
     },
     "tags": {
       "type": "relation",
