@@ -11,7 +11,7 @@
   },
   "devDependencies": {},
   "dependencies": {
-    "@artcoded/strapi-plugin-github-projects": "1.0.1",
+    "@artcoded/strapi-plugin-github-projects": "1.1.1",
     "@strapi/helper-plugin": "^4.10.5",
     "@strapi/plugin-graphql": "4.10.5",
     "@strapi/plugin-i18n": "4.10.5",
