@@ -11,17 +11,18 @@
   },
   "devDependencies": {},
   "dependencies": {
-    "@artcoded/strapi-plugin-github-projects": "^1.0.5",
-    "@strapi/plugin-graphql": "4.5.4",
-    "@strapi/plugin-i18n": "4.5.4",
-    "@strapi/plugin-users-permissions": "4.5.4",
-    "@strapi/provider-email-nodemailer": "4.5.4",
-    "@strapi/provider-upload-cloudinary": "4.5.4",
-    "@strapi/strapi": "4.5.4",
+    "@artcoded/strapi-plugin-github-projects": "1.0.1",
+    "@strapi/helper-plugin": "^4.10.5",
+    "@strapi/plugin-graphql": "4.10.5",
+    "@strapi/plugin-i18n": "4.10.5",
+    "@strapi/plugin-users-permissions": "4.10.5",
+    "@strapi/provider-email-nodemailer": "4.10.5",
+    "@strapi/provider-upload-cloudinary": "4.10.5",
+    "@strapi/strapi": "4.10.5",
     "add": "^2.0.6",
+    "better-sqlite3": "latest",
     "pg": "^8.7.3",
     "pg-connection-string": "^2.5.0",
-    "better-sqlite3": "latest",
     "yarn": "^1.22.18"
   },
   "author": {
@@ -31,7 +32,7 @@
     "uuid": "193bd07f-b0a1-4ddd-9d75-8eb8d8dbc52c"
   },
   "engines": {
-    "node": ">=12.x.x <=16.x.x",
+    "node": ">=12.x.x <=18.x.x",
     "npm": ">=6.0.0"
   },
   "license": "MIT"

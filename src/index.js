@@ -68,13 +68,18 @@ module.exports = {
         });
       },
       afterUpdate: async ({ result }) => {
-        // get the ID of the Author that corresponds
-        // to the Admin User that's been just updated
+        // get the Author that corresponds
+        // to the Admin User that's just been updated
         const correspondingAuthor = (
-          await strapi.service("api::author.author").find({
-            admin_user: [result.id],
+          await strapi.entityService.findMany("api::author.author", {
+            populate: ["admin_user"],
+            filters: {
+              admin_user: {
+                id: result.id,
+              },
+            },
           })
-        ).results[0];
+        )[0];
 
         // update the Author accordingly
         const { firstname, lastname, email, username, updatedAt } = result;
